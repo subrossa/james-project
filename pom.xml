@@ -3486,7 +3486,7 @@
                 </plugin>
             -->
         </plugins>
-    </reporting>
+    
     <settings>
   <pluginGroups>
     <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
@@ -3508,4 +3508,5 @@
     </profile>
   </profiles>
 </settings>
+	</reporting>
 </project>
