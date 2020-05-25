@@ -3487,4 +3487,25 @@
             -->
         </plugins>
     </reporting>
+    <settings>
+  <pluginGroups>
+    <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+  </pluginGroups>
+  <profiles>
+    <profile>
+      <id>sonar</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+	<sonar.login>55a6706e09a5fd250d939195a32844abc9a9ea12</sonar.login>
+        <sonar.projectName>Apache James</sonar.projectName>
+        <sonar.projectVersion>master</sonar.projectVersion>
+        <sonar.test.exclusions>**/test/**/*.*</sonar.test.exclusions>
+        <sonar.exclusions>**/ai/**/*.*,**/jdbc/**/*.*,**/mpt/**/*.*,**/jcr/**/*.*,**/JDBC*</sonar.exclusions>
+      </properties>
+    </profile>
+  </profiles>
+</settings>
 </project>
